@@ -17,3 +17,11 @@ program variable names.
 A companion CodeProject article delves more deeply into the issues addressed by
 this solution, all of which arose in the course of routine software development
 activities.
+
+Archive <https://github.com/txwizard/JSON_Jam/blob/master/Binaries.zip> contains
+the biaries. When extracted into the project root directory, it deposits them in
+the locations where they would exist if you built the project yourself, which is
+the location, in relation to the Test_Data directory, where the program expects
+to find its input file and create its three output files. This configuration is
+designed so that you can run the program by double-clicking JSON_Jam.exe in the
+File Explorer.
