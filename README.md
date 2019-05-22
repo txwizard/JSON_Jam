@@ -20,8 +20,17 @@ activities.
 
 Archive <https://github.com/txwizard/JSON_Jam/blob/master/Binaries.zip> contains
 the biaries. When extracted into the project root directory, it deposits them in
-the locations where they would exist if you built the project yourself, which is
-the location, in relation to the Test_Data directory, where the program expects
+the locations where they would exist if you built the project, which is the
+location, in relation to the `Test_Data` directory, where the program expects
 to find its input file and create its three output files. This configuration is
-designed so that you can run the program by double-clicking JSON_Jam.exe in the
-File Explorer.
+designed so that you can run the program by double-clicking `JSON_Jam.exe` in
+the File Explorer.
+
+Though the program consumes eight custom DLLs, all are restored from the NuGet
+repository the first time you build, unless you disables automatic restore.
+
+The PDB folder in the project root contains the PDB files that match the DLLs
+that are included with the package, all of which are also included in the
+`Binaries.zip` archive. They are here because the NuGet restore isn't putting
+them into the local package repository. Until that gets sorted, this is the
+most direct way to make them accessible.

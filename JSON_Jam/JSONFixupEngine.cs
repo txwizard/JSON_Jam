@@ -1,4 +1,77 @@
-﻿using System;
+﻿/*
+    ============================================================================
+
+    Module Name:        Program.cs
+
+    Namespace Name:     JSON_Jam
+
+    Class Name:         JSONFixupEngine
+
+    Synopsis:           This class implements a data-driven engine to correct
+                        key names in JSON strings that are invalid C# variable
+                        names, and converts named keys into array elements that
+                        use the value that was intended to be its key as the
+                        value of the first field in each array element, each of
+                        which corresponds to a property of the class into which
+                        it is transformed by the Newtonsoft JSON deserializer.
+
+    Remarks:            This class relies on a list of string pairs that are
+                        kept in a TAB delimited text file that is embedded into
+                        the defining assembly. This array could be externalized
+                        by deriving a class from this one, and overriding its
+                        public constructor.
+
+    Author:             David A. Gray
+
+    License:            Copyright (C) 2009-2019, David A. Gray. 
+						All rights reserved.
+
+                        Redistribution and use in source and binary forms, with
+                        or without modification, are permitted provided that the
+                        following conditions are met:
+
+                        *   Redistributions of source code must retain the above
+                            copyright notice, this list of conditions and the
+                            following disclaimer.
+
+                        *   Redistributions in binary form must reproduce the
+                            above copyright notice, this list of conditions and
+                            the following disclaimer in the documentation and/or
+                            other materials provided with the distribution.
+
+                        *   Neither the name of David A. Gray, nor the names of
+                            his contributors may be used to endorse or promote
+                            products derived from this software without specific
+                            prior written permission.
+
+                        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND
+                        CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED
+                        WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+                        WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+                        PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL
+                        David A. Gray BE LIABLE FOR ANY DIRECT, INDIRECT,
+                        INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+                        (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+                        SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+                        PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+                        ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+                        LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+                        ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
+                        IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+    ----------------------------------------------------------------------------
+    Revision History
+    ----------------------------------------------------------------------------
+
+    Date       Version Author Synopsis
+    ---------- ------- ------ -------------------------------------------------
+    2019/05/13 1.0     DAG    This is the first version.
+
+    2019/05/22 1.1     DAG    Add the flower box and a three-clause BSD license.
+    ============================================================================
+*/
+
+using System;
 using System.Text;
 
 using WizardWrx;

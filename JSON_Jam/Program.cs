@@ -1,4 +1,75 @@
-﻿using System;
+﻿/*
+    ============================================================================
+
+    Module Name:        Program.cs
+
+    Namespace Name:     JSON_Jam
+
+    Class Name:         Program
+
+    Synopsis:           This command line utility demonstrates a solution to two
+                        issues that I recently encountered when processing JSON
+                        strings returned as responses from various Web services.
+
+    Remarks:            This class module implements the Program class, which is
+                        composed primarily of the static void Main method,
+                        which is functionally equivalent to the main() routine
+                        of a standard C program.
+
+    Author:             David A. Gray
+
+    License:            Copyright (C) 2009-2019, David A. Gray. 
+						All rights reserved.
+
+                        Redistribution and use in source and binary forms, with
+                        or without modification, are permitted provided that the
+                        following conditions are met:
+
+                        *   Redistributions of source code must retain the above
+                            copyright notice, this list of conditions and the
+                            following disclaimer.
+
+                        *   Redistributions in binary form must reproduce the
+                            above copyright notice, this list of conditions and
+                            the following disclaimer in the documentation and/or
+                            other materials provided with the distribution.
+
+                        *   Neither the name of David A. Gray, nor the names of
+                            his contributors may be used to endorse or promote
+                            products derived from this software without specific
+                            prior written permission.
+
+                        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND
+                        CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED
+                        WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+                        WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+                        PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL
+                        David A. Gray BE LIABLE FOR ANY DIRECT, INDIRECT,
+                        INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+                        (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+                        SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+                        PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+                        ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+                        LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+                        ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
+                        IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+    ----------------------------------------------------------------------------
+    Revision History
+    ----------------------------------------------------------------------------
+
+    Date       Version Author Synopsis
+    ---------- ------- ------ -------------------------------------------------
+    2019/05/13 1.0     DAG    This is the first version.
+
+    2019/05/22 1.1     DAG    Write the details returned in the JSON response to
+                              a tab-delimited text file, log its name on the
+                              console, and add the flower box and a three-clause
+                              BSD license.
+    ============================================================================
+*/
+
+using System;
 
 using System.IO;
 using System.Reflection;
@@ -141,24 +212,24 @@ namespace JSON_Jam
                         strDetailRowFormatString ,
                         new object [ ]
                         {
-                        ArrayInfo.OrdinalFromIndex(intJ) ,                      // Format Item 0: Item
-
-                        Beautify ( daily.Activity_Date) ,                       // Format Item 1: Activity_Date
-                        Beautify ( daily.Open ) ,                               // Format Item 2: Open
-                        Beautify ( daily.High ) ,                               // Format Item 3: High
-                        Beautify ( daily.Low ) ,                                // Format Item 4: Low
-                        Beautify ( daily.Close ) ,                              // Format Item 5: Close
-                        Beautify ( daily.AdjustedClose ) ,                      // Format Item 6: AdjustedClose
-                        Beautify ( daily.Volume ) ,                             // Format Item 7: Volume
-                        Beautify ( daily.DividendAmount ) ,                     // Format Item 8: DividendAmount
-                        Beautify ( daily.SplitCoefficient )                     // Format Item 9: SplitCoefficient
+                            ArrayInfo.OrdinalFromIndex ( intJ ) ,               // Format Item 0: Item
+                            Beautify ( daily.Activity_Date) ,                   // Format Item 1: Activity_Date
+                            Beautify ( daily.Open ) ,                           // Format Item 2: Open
+                            Beautify ( daily.High ) ,                           // Format Item 3: High
+                            Beautify ( daily.Low ) ,                            // Format Item 4: Low
+                            Beautify ( daily.Close ) ,                          // Format Item 5: Close
+                            Beautify ( daily.AdjustedClose ) ,                  // Format Item 6: AdjustedClose
+                            Beautify ( daily.Volume ) ,                         // Format Item 7: Volume
+                            Beautify ( daily.DividendAmount ) ,                 // Format Item 8: DividendAmount
+                            Beautify ( daily.SplitCoefficient )                 // Format Item 9: SplitCoefficient
                         } );
                 }   // for ( int intJ = ArrayInfo.ARRAY_FIRST_ELEMENT ; intJ < timeSeriesDailyResponse.Time_Series_Daily.Length ; intJ++ )
             }   // using ( StreamWriter swTimeSeriesDetail = new StreamWriter ( strAbsoluteInputFileName , FileIOFlags.FILE_OUT_CREATE , System.Text.Encoding.ASCII , MagicNumbers.CAPACITY_08KB ) )
 
-            ShowFileDetails (
-                Properties.Resources.FILE_LABEL_CONTENT_REPORT ,                // string pstrLabel
-                strAbsoluteInputFileName );                                     // string pstrFileName
+            Console.WriteLine (
+                ShowFileDetails (                                               // Print the returned string.
+                    Properties.Resources.FILE_LABEL_CONTENT_REPORT ,            // string pstrLabel
+                    strAbsoluteInputFileName ) );                               // string pstrFileName
         }   // private static void ConsumeResponse
 
 

@@ -10,8 +10,8 @@
 
 namespace JSON_Jam.Properties {
     using System;
-
-
+    
+    
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
     /// </summary>
@@ -23,15 +23,15 @@ namespace JSON_Jam.Properties {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
-
+        
         private static global::System.Resources.ResourceManager resourceMan;
-
+        
         private static global::System.Globalization.CultureInfo resourceCulture;
-
+        
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
         internal Resources() {
         }
-
+        
         /// <summary>
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
@@ -45,7 +45,7 @@ namespace JSON_Jam.Properties {
                 return resourceMan;
             }
         }
-
+        
         /// <summary>
         ///   Overrides the current thread's CurrentUICulture property for all
         ///   resource lookups using this strongly typed resource class.
@@ -59,7 +59,7 @@ namespace JSON_Jam.Properties {
                 resourceCulture = value;
             }
         }
-
+        
         /// <summary>
         ///   Looks up a localized string similar to The label row of internal resource {0} is invalid.{3}    Expected value = {1}{3}    Actual value   = {2}.
         /// </summary>
@@ -68,7 +68,7 @@ namespace JSON_Jam.Properties {
                 return ResourceManager.GetString("ERRMSG_CORRUPTED_EMBBEDDED_RESOURCE_LABEL", resourceCulture);
             }
         }
-
+        
         /// <summary>
         ///   Looks up a localized string similar to Detail record {0} of internal resource {1} is invalid.{5}    Expected field count = {2}{5}    Actual field count   = {3}{5}    Actual record        = {4}.
         /// </summary>
@@ -77,43 +77,43 @@ namespace JSON_Jam.Properties {
                 return ResourceManager.GetString("ERRMSG_CORRUPTED_EMBEDDED_RESOURCE_DETAIL", resourceCulture);
             }
         }
-
+        
         /// <summary>
-        ///   Looks up a localized string similar to Detailed Report File.
+        ///   Looks up a localized string similar to Detailed Report File:   .
         /// </summary>
         internal static string FILE_LABEL_CONTENT_REPORT {
             get {
                 return ResourceManager.GetString("FILE_LABEL_CONTENT_REPORT", resourceCulture);
             }
         }
-
+        
         /// <summary>
-        ///   Looks up a localized string similar to Output File:.
+        ///   Looks up a localized string similar to Output File:            .
         /// </summary>
         internal static string FILE_LABEL_FINAL {
             get {
                 return ResourceManager.GetString("FILE_LABEL_FINAL", resourceCulture);
             }
         }
-
+        
         /// <summary>
-        ///   Looks up a localized string similar to Input File:.
+        ///   Looks up a localized string similar to Input File:             .
         /// </summary>
         internal static string FILE_LABEL_INPUT {
             get {
                 return ResourceManager.GetString("FILE_LABEL_INPUT", resourceCulture);
             }
         }
-
+        
         /// <summary>
-        ///   Looks up a localized string similar to Intermediate File:.
+        ///   Looks up a localized string similar to Intermediate File:      .
         /// </summary>
         internal static string FILE_LABEL_INTERMEDIATE {
             get {
                 return ResourceManager.GetString("FILE_LABEL_INTERMEDIATE", resourceCulture);
             }
         }
-
+        
         /// <summary>
         ///   Looks up a localized string similar to Please press Return to fully stop the program..
         /// </summary>
@@ -122,7 +122,7 @@ namespace JSON_Jam.Properties {
                 return ResourceManager.GetString("MSG_AWAIT_CARBON_UNIT", resourceCulture);
             }
         }
-
+        
         /// <summary>
         ///   Looks up a localized string similar to Item\tActivity_Date\tOpen\tHigh\tLow\tClose\tAdjustedClose\tVolume\tDividendAmount\tSplitCoefficient.
         /// </summary>
@@ -131,16 +131,16 @@ namespace JSON_Jam.Properties {
                 return ResourceManager.GetString("MSG_RESPONSE_DETAILS_LABELS", resourceCulture);
             }
         }
-
+        
         /// <summary>
-        ///   Looks up a localized string similar to Metadata read from response: Information   = {0}{6}                             Symbol        = {1}{6}                             LastRefreshed = {2}{6}                             OutputSize    = {3}{6}                             TimeZone      = {4}{6}                             Detail Count  = {5}{6}.
+        ///   Looks up a localized string similar to Metadata from response: Information   = {0}{6}                             Symbol        = {1}{6}                             LastRefreshed = {2}{6}                             OutputSize    = {3}{6}                             TimeZone      = {4}{6}                             Detail Count  = {5}{6}.
         /// </summary>
         internal static string MSG_RESPONSE_METADATA {
             get {
                 return ResourceManager.GetString("MSG_RESPONSE_METADATA", resourceCulture);
             }
         }
-
+        
         /// <summary>
         ///   Looks up a localized string similar to {0}, version {1}.{2},{5}{3} ({4} UTC){5}.
         /// </summary>
@@ -149,7 +149,7 @@ namespace JSON_Jam.Properties {
                 return ResourceManager.GetString("MSG_START", resourceCulture);
             }
         }
-
+        
         /// <summary>
         ///   Looks up a localized string similar to {4}{0} Done, {1} ({2} UTC){4}Running time = {3}.
         /// </summary>
