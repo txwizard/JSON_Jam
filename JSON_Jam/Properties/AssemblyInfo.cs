@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle ( "JSON_Joy" )]
+[assembly: AssemblyTitle ( "JSON_Jam" )]
 [assembly: AssemblyDescription ( "" )]
 [assembly: AssemblyConfiguration ( "" )]
-[assembly: AssemblyCompany ( "HP Inc." )]
-[assembly: AssemblyProduct ( "JSON_Joy" )]
-[assembly: AssemblyCopyright ( "Copyright © HP Inc. 2019" )]
+[assembly: AssemblyCompany ( "David A. Gray" )]
+[assembly: AssemblyProduct ( "JSON_Jam" )]
+[assembly: AssemblyCopyright ( "Copyright © 2019, David A. Gray" )]
 [assembly: AssemblyTrademark ( "" )]
 [assembly: AssemblyCulture ( "" )]
 
