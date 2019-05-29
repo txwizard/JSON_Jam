@@ -1,7 +1,7 @@
 ﻿/*
     ============================================================================
 
-    Module Name:        Program.cs
+    Module Name:        JSONFixupEngine.cs
 
     Namespace Name:     JSON_Jam
 
@@ -23,8 +23,8 @@
 
     Author:             David A. Gray
 
-    License:            Copyright (C) 2009-2019, David A. Gray. 
-						All rights reserved.
+    License:            Copyright (C) 2019, David A. Gray. 
+                        All rights reserved.
 
                         Redistribution and use in source and binary forms, with
                         or without modification, are permitted provided that the
@@ -68,6 +68,9 @@
     2019/05/13 1.0     DAG    This is the first version.
 
     2019/05/22 1.1     DAG    Add the flower box and a three-clause BSD license.
+
+    2019/05/28 1.2     DAG    Clean up the flower box.
+                              The code is otherwase unchanged.
     ============================================================================
 */
 
