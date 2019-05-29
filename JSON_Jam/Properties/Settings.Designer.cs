@@ -9,20 +9,20 @@
 //------------------------------------------------------------------------------
 
 namespace JSON_Jam.Properties {
-
-
+    
+    
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.9.0.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
-
+        
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
-
+        
         public static Settings Default {
             get {
                 return defaultInstance;
             }
         }
-
+        
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("..\\..\\..\\Test_Data")]
@@ -31,16 +31,16 @@ namespace JSON_Jam.Properties {
                 return ((string)(this["DATA_DIRECTORY_NAME"]));
             }
         }
-
+        
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("strResponse_Raw_20190508_181920.TXT")]
+        [global::System.Configuration.DefaultSettingValueAttribute("strResponse_Raw_20190508_181920.JSON")]
         public string JSON_INPUT_FILE_NAME {
             get {
                 return ((string)(this["JSON_INPUT_FILE_NAME"]));
             }
         }
-
+        
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("strResponse_Intermediate.TXT")]
@@ -49,7 +49,7 @@ namespace JSON_Jam.Properties {
                 return ((string)(this["JSON_INTERMEDIATE_FILE_NAME"]));
             }
         }
-
+        
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("strResponse_FINAL.TXT")]
@@ -58,7 +58,7 @@ namespace JSON_Jam.Properties {
                 return ((string)(this["JSON_FINAL_FILE_NAME"]));
             }
         }
-
+        
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("strResponse_Contents.TXT")]
