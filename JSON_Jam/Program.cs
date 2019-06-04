@@ -69,6 +69,10 @@
 
     2019/05/28 1.2     DAG    Clean up the flower box.
                               The code is otherwase unchanged.
+
+    2019/06/04 1.4     DAG    Use the new string extension methods to guarantee
+                              that string presented to the deserializer contains
+                              only Unix newlines.
     ============================================================================
 */
 
@@ -92,7 +96,7 @@ namespace JSON_Jam
 
             try
             {
-                string strRawResponse = GetRawJSONString ( );
+                string strRawResponse = GetRawJSONString ( ).UnixLineEndings ( );
                 JSONFixupEngine engine = new JSONFixupEngine ( @"TIME_SERIES_DAILY_ResponseMap" );
                 string strFixedUp_Pass_1 = engine.ApplyFixups_Pass_1 ( strRawResponse );
 

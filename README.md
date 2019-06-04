@@ -18,6 +18,12 @@ A companion CodeProject article delves more deeply into the issues addressed by
 this solution, all of which arose in the course of routine software development
 activities.
 
+A side topic arose during development, which is that there appears to be no way
+to coerce the Git clone engine into downloading a text file without replacing
+its Unix line breaks with Windows line breaks. This gave rise to another one of
+my state-machine-drive string parsing exercises, which I incorporated into
+version 1.4 of this assembly.
+
 Archive <https://github.com/txwizard/JSON_Jam/blob/master/Binaries.zip> contains
 the biaries. When extracted into the project root directory, it deposits them in
 the locations where they would exist if you built the project, which is the
